@@ -1,9 +1,9 @@
 import 'package:dynamic_counter/core/routes/app_route.dart';
 import 'package:dynamic_counter/features/counter/screens/main.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-CupertinoPageRoute<dynamic> _getRoute(String routeName, Widget page) {
-  return CupertinoPageRoute(
+PageRoute<dynamic> _getRoute(String routeName, Widget page) {
+  return MaterialPageRoute(
     builder: (BuildContext context) => page,
     settings: RouteSettings(name: routeName),
   );
